@@ -8,8 +8,7 @@ const Header = () => (
       <img src={logo} className="logoImage" alt="spacehub logo" />
       <h1 className="logoText">Space Travellers&apos; Hub</h1>
     </NavLink>
-    <nav>
-    </nav>
+    <nav />
   </header>
 );
 
