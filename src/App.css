@@ -17,10 +17,16 @@ nav {
 }
 
 nav a {
-  color: #fff;
+  color: rgb(37, 163, 205);
   text-decoration: none;
   font-size: 12px;
   margin-right: 16px;
+}
+
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #fff;
 }
 
 a:active {

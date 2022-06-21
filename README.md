@@ -70,11 +70,11 @@
 - Twitter: https://twitter.com/ppmarq1
 - LinkedIn: https://br.linkedin.com/in/pedroalmeidamarques/
 
-**Nabil.....**
+**NabilHY**
 
-- GitHub: 
-- Twitter: 
-- LinkedIn: 
+- GitHub: https://github.com/NabilHY
+- Twitter: https://twitter.com/NeoNabil2
+- LinkedIn: https://www.linkedin.com/in/nabil-hayoun/
 
 
 ## 🤝 Contributing
