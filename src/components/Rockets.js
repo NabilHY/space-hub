@@ -4,11 +4,16 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getRockets, reserveRocket } from '../redux/rockets/rockets';
 import './rockets.css';
 
+let loaded = false;
+
 function Rockets() {
   const dispatch = useDispatch();
   const rockets = useSelector((state) => state.rocketsReducer);
   useEffect(() => {
-    dispatch(getRockets());
+    if (!loaded) {
+      dispatch(getRockets());
+      loaded = true;
+    }
   }, [dispatch]);
 
   return (
