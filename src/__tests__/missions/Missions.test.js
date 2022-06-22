@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import store from '../../redux/configureStore';
-import Missions from '../../components/missions';
+import Missions from '../../components/Missions';
 
 describe('snapshot testing', () => {
   test('snapshot for Missions component', () => {
