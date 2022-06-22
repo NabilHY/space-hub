@@ -47,13 +47,27 @@ p {
   gap: 15px;
 }
 
-.reserve-btn {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.reserved-btn {
   color: white;
-  width: 30%;
+  width: 40%;
   border-radius: 10px;
   background-color: rgb(5, 136, 237);
   cursor: pointer;
+}
+
+.reserve-btn {
+  color: rgb(5, 136, 237);
+  width: 40%;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid rgb(5, 136, 237);
+}
+
+.reserved {
+  background-color: rgb(5, 136, 237);
+  color: #fff;
+  border-radius: 15px;
+  padding: 0 1%;
+  margin-right: 5px;
 }
