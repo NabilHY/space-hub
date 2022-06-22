@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMissions } from '../redux/missions/missions';
-import MissionBtn from '../Btns/MissionBtn';
+import MissionBtn from './Btns/MissionBtn';
 import './missions.css';
 
 let loadOnce = false;

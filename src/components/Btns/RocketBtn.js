@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { getRockets } from '../redux/rockets/rockets';
+import { getRockets } from '../../redux/rockets/rockets';
 
 const RocketBtn = ({ className, text, id }) => {
   const dispatch = useDispatch();
