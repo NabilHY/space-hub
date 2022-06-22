@@ -33,7 +33,7 @@ a:active {
   color: lightblue;
 }
 
-h1 {
+.header {
   font-size: 16px;
   color: #fff;
 }
