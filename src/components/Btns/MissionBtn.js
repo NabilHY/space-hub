@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { getRockets } from '../redux/rockets/rockets';
+import { joinMissionAction } from '../../redux/missions/missions';
 
-const RocketBtn = ({ className, text, id }) => {
+const MissionBtn = ({ className, text, id }) => {
   const dispatch = useDispatch();
   return (
     <button
       type="button"
-      onClick={() => dispatch(getRockets(id))}
+      onClick={() => dispatch(joinMissionAction(id))}
       className={className}
     >
       {text}
@@ -15,10 +15,10 @@ const RocketBtn = ({ className, text, id }) => {
   );
 };
 
-RocketBtn.propTypes = {
+MissionBtn.propTypes = {
   className: PropTypes.string.isRequired,
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 
-export default RocketBtn;
+export default MissionBtn;

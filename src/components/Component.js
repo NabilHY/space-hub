@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import './component.css';
-import MissionBtn from '../Btns/MissionBtn';
-import RocketBtn from '../Btns/RocketBtn';
+import MissionBtn from './Btns/MissionBtn';
+import RocketBtn from './Btns/RocketBtn';
 
 const Component = ({
   reservations, object, message, type,
