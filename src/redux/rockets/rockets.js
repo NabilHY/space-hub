@@ -1,30 +1,22 @@
-import fetchRockets from '../../apiServices/getRockets';
+import fetchData from '../../apiServices/getRockets';
 
 const ROCKETS = 'redux/actions/get_rockets';
 
-const rockets = (payload) => ({
+const rockets = (rockets) => ({
   type: ROCKETS,
-  payload,
+  payload: rockets,
 });
 
-export const getRockets = () => async (dispatch) => {
-  const data = await fetchRockets();
-  data.forEach((rocket) => {
-    data.push({
-      id: rocket.id,
-      rocket_name: rocket.rocket_name,
-      description: rocket.description,
-      flickr_images: rocket.flickr_images[0],
-      reserved: false,
-    });
+export const getRockets = () => (dispach) => {
+  fetchData().then((rocket) => {
+    dispach(rockets(rocket));
   });
-  dispatch(fetchRockets(rockets));
 };
 
 const rocketsReducer = (state = [], action) => {
   switch (action.type) {
     case ROCKETS:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }
