@@ -50,7 +50,7 @@
 - **npx hint .** : To test html codes
 - **npx stylelint "**/\*.{css,scss}"\*\* : To test css code
 - **npx eslint .** : To test Eslint Report
-- **npm run test** : To run the tests.
+- **npm run test** : To  run the tests.
 
 ### Deployment
 

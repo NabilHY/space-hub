@@ -1,19 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import './header.css';
 
 const Header = () => (
-  <nav>
-    <div className="main">
-      <img src={logo} alt="logo" />
-      <h1 className="header">Space Traveler&apos;s Hub</h1>
+  <header className="Header">
+    <div className="Header__div">
+      <img src={logo} alt="logo" className="Header__div_logo" />
+      <h1 className="Header__div_title">Space Travellers&apos; Hub</h1>
     </div>
-    <div>
-      <NavLink to="/">Rockets</NavLink>
-      <NavLink to="missions">Missions</NavLink>
-      <NavLink to="profile">My Profile</NavLink>
-    </div>
-  </nav>
+    <nav className="Header__nav">
+      <ul className="Header__nav_list">
+        <li>
+          <NavLink to="/" activeclassname="active">
+            Rockets
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/missions" activeclassname="active">
+            Missions
+          </NavLink>
+        </li>
+        <span className="Header__nav_list_bar" />
+        <li>
+          <NavLink to="/profile" activeclassname="active">
+            My Profile
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
+  </header>
 );
 
 export default Header;
