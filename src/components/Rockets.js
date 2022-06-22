@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRockets } from '../redux/rockets/rockets';
+import './rockets.css';
 
 function Rockets() {
   const dispatch = useDispatch();
@@ -11,16 +12,18 @@ function Rockets() {
   }, [dispatch]);
 
   return (
-    <div className="rocket-container">
+    <div className="rockets-container">
       {
         rockets.map(({
           rocket_id, rocket_name, description, flickr_images,
         }) => (
-          <div key={rocket_id}>
-            <img src={flickr_images} alt={rocket_name} />
-            <h1>{rocket_name}</h1>
-            <p>{description}</p>
-            <button type="button">Reserve Rocket</button>
+          <div className="rocket-container" key={rocket_id}>
+            <img className="rocket-img" src={flickr_images} alt={rocket_name} />
+            <div className="rocket-info">
+              <h1>{rocket_name}</h1>
+              <p>{description}</p>
+              <button type="button" className="reserve-btn">Reserve Rocket</button>
+            </div>
           </div>
         ))
       }
