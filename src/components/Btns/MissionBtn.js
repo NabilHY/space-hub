@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { joinMissionAction } from 'redux/missions/missions';
+import { joinMissionAction } from '../../redux/missions/missions';
 
 const MissionBtn = ({ className, text, id }) => {
   const dispatch = useDispatch();
