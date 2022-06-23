@@ -1,51 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-nav {
-  background-color: #6d6a6a;
-  font-family: 'Space Mono', monospace;
-  display: flex;
-  padding: 16px 32px;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 12px;
-}
-
-nav a {
-  color: rgb(37, 163, 205);
-  text-decoration: none;
-  font-size: 12px;
-  margin-right: 16px;
-}
-
-nav a.active {
-  font-weight: bold;
-  text-decoration: underline;
-  color: #fff;
-}
-
-a:active {
-  color: lightblue;
-}
-
-.header {
-  font-size: 16px;
-  color: #fff;
-}
-
-img {
-  height: 20px;
-  width: 20px;
-}
-
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  width: 96%;
+  max-width: 120rem;
+  margin: auto;
 }
