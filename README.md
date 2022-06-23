@@ -17,7 +17,7 @@ The Rockets section displays a list of all available SpaceX rockets. Users can b
 
 ## Live Demo
 
-[Live Demo Link](comming soon)
+([Live Demo Link](https://62b45e8d1cd8b21af3e0e814--stunning-khapse-f798f8.netlify.app/))
 
 ## Getting Started
 
