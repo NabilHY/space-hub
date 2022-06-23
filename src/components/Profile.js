@@ -11,7 +11,6 @@ const Profile = () => {
     (mission) => mission.reserved === true,
   );
 
-  const rockets = useSelector((state) => state.rocketsReducer);
   const reservedRockets = rockets.filter(
     (rocket) => rocket.reserved === true,
   );
