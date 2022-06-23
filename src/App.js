@@ -5,17 +5,17 @@ import Profile from './components/Profile';
 import Header from './components/Header';
 import './App.css';
 
-function App() {
-  return (
-    <>
-      <Header />
+const App = () => (
+  <div className="App">
+    <Header />
+    <main className="main">
       <Routes>
-        <Route path="/" element={<Rockets />} />
-        <Route path="missions" element={<Missions />} />
-        <Route path="profile" element={<Profile />} />
+        <Route exact path="/" element={<Rockets />} />
+        <Route exact path="/missions" element={<Missions />} />
+        <Route exact path="/profile" element={<Profile />} />
       </Routes>
-    </>
-  );
-}
+    </main>
+  </div>
+);
 
 export default App;
